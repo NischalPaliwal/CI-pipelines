@@ -8,5 +8,5 @@ on:
 jobs:
   build:
     steps:
-      -name: Print something
-      run: echo "Hello, World!"
+      - name: Print something
+        run: echo "Hello, World!"
