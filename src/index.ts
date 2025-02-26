@@ -7,6 +7,12 @@ app.get("/check", (req: Request, res: Response) => {
     res.send("Server is running");
 });
 
-app.listen(port, () => [
-    console.log(`Server is running on port ${port}`)
-]);
+app.get("/", (req: Request, res: Response) => {
+    res.json({
+        message: "Hi there from the server!"
+    });
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
