@@ -1,0 +1,19 @@
+{
+  "name": "ci-pipelines",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node ./dist/index.js",
+    "dev": "tsc -b && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "express": "^4.21.2"
+  }
+}
